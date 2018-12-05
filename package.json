@@ -1,0 +1,21 @@
+{
+  "name": "person-service",
+  "version": "1.0.0",
+  "description": "Simple REST service that serves a person collection",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "REST",
+    "service",
+    "demo"
+  ],
+  "author": "Louis E. Mauget",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}
