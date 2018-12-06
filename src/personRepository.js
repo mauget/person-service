@@ -1,15 +1,22 @@
 'use strict';
 
 const Person = require('./person');
+const data = require('./data');
 
 class PersonRepository {
     constructor() {
-        this.persons = new Map([
-            [1, new Person(1, 'FN1', 'LN1', 'email1@email.na')],
-            [2, new Person(2, 'FN2', 'LN2', 'email2@email.na')],
-            [3, new Person(3, 'FN3', 'LN3', 'email3@email.na')],
-            [4, new Person(4, 'FN4', 'LN4', 'email4@email.na')]
-        ]);
+        this.initMockDBMS();
+    }
+
+    initMockDBMS() {
+        this.persons = new Map();
+
+        data.map( v => {
+            const p = new Person(v.id, v.first_name, v.last_name, v.email);
+            this.persons.set(v.id, p);
+            // console.log(this.persons.get(v.id));
+        });
+
     }
 
     generateId() {

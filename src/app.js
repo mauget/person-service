@@ -15,7 +15,7 @@ app.listen(PORT, () => {
     console.log('Person service listening on port ' + PORT);
 });
 
-const router = (function(a) {
+const router = (a => {
 
     a.get('/', function (req, res) {
         res.send('Person service listening on port ' + PORT);
