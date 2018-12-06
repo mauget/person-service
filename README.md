@@ -58,5 +58,7 @@ repository record to an input reccord.
 
 ## References
 
-*  mockaroo: [Mock API person data](https://www.mockaroo.com/)
-*  Lyudmil Latinov: [Build a REST API with Express on Node.js and run it on Docker](https://automationrhapsody.com/build-rest-api-express-node-js-run-docker/)
+* [node express router](https://expressjs.com/en/4x/api.html#router)
+* [node body-parser](https://www.npmjs.com/package/body-parser)
+* [mockaroo person data](https://www.mockaroo.com/)
+* [Lyudmil Latinov blog: Build a REST API with Express on Node.js and run it on Docker](https://automationrhapsody.com/build-rest-api-express-node-js-run-docker/)
