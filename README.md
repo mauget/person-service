@@ -49,6 +49,8 @@ repository record to an input reccord.
 
 ##### DELETE
 
+* `/persons/:id` - deletes single person keyed by integer id
+
 ## Node Middleware
 
 * express 
