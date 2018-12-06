@@ -13,6 +13,9 @@ const getPersonRoutes = (app) => {
             res.send(result);
         })
         .get('/all', (req, res) => {
+
+            console.log('getPersonRoutes /all called');
+
             const result = personRepo.getAll();
             res.send(result);
         })

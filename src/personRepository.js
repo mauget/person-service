@@ -1,6 +1,6 @@
 'use strict';
 
-const Person = require("./person");
+const Person = require('./person');
 
 class PersonRepository {
     constructor() {
@@ -12,6 +12,14 @@ class PersonRepository {
         ]);
     }
 
+    generateId() {
+        let id;
+        do {
+            id = parseInt(String(Math.random() * 100000).slice(0, 4));
+        } while (this.persons.has(id));
+        return id;
+    }
+
     getById(id) {
         return this.persons.get(id);
     }
@@ -20,20 +28,32 @@ class PersonRepository {
         return Array.from(this.persons.values());
     }
 
-    remove() {
-        const keys = Array.from(this.persons.keys());
-        this.persons.delete(keys[keys.length - 1]);
+    remove(id) {
+        if (this.persons.has(id)) {
+            this.persons.delete(id)
+            return 'Deleted Person id ' + id;
+        }
+
+        return 'Person not found for id ' + id;
     }
 
     save(person) {
-        if (this.getById(person.id) !== undefined) {
-            this.persons[person.id] = person;
-            return "Updated Person with id=" + person.id;
+        const id = person.id;
+        if (this.persons.has(id)) {
+            this.persons.set(id, person);
+            return 'Updated Person with id=' + id;
         }
-        else {
-            this.persons.set(person.id, person);
-            return "Added Person with id=" + person.id;
-        }
+
+        this.persons.set(id, person);
+        return 'Added Person with id=' + id;
+    }
+
+    create(person) {
+        const id = this.generateId();
+        person.id = id;
+        this.persons.set(id, person);
+        return 'Added Person with id=' + id;
+
     }
 }
 
