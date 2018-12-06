@@ -44,8 +44,8 @@ POSTs of a given `Person` result in multiple new records, differing only by id.
 * `/persons` - updates or creates a new person record from the sent `Person` object.
 
 PUT is idempotent, meaning repeated PUTs persist identical states. Unlike POST, the 
-`Person.id` is _not_ ignored. Consider a PUT as a command to synchronize a 
-repository record to a input reccord.
+`Person.id` is **not** ignored. Consider a PUT as a command to synchronize a 
+repository record to an input reccord.
 
 ##### DELETE
 
