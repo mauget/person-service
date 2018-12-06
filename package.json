@@ -5,9 +5,10 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
-    "docker-build": "docker build . -t nodejs-rest",
-    "docker-start": "docker run --name nodejs-rest --rm -p 3000:3000 nodejs-rest",
-    "docker-stop": "docker stop nodejs-rest",
+    "docker-build": "docker build . -t mauget/person-service:latest",
+    "docker-push": "docker push mauget/person-service:latest",
+    "docker-start": "docker run --name person-service --rm -p 3000:3000 mauget/person-service:latest",
+    "docker-stop": "docker stop person-service",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
