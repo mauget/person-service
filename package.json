@@ -5,6 +5,9 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
+    "docker-build": "docker build . -t nodejs-rest",
+    "docker-start": "docker run --name nodejs-rest --rm -p 9000:3000 nodejs-rest",
+    "docker-stop": "docker stop nodejs-rest",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

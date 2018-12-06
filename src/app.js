@@ -12,13 +12,13 @@ const app = new express();
 app.use(bodyParser.json());
 
 app.listen(PORT, () => {
-    console.log('Person service listening on port ' + PORT);
+    console.log('Person service listening');
 });
 
 const router = (a => {
 
     a.get('/', function (req, res) {
-        res.send('Person service listening on port ' + PORT);
+        res.send('Person service listening');
     });
 
     a.get('/persons/:id', (req, res) => {
