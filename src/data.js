@@ -1,6 +1,16 @@
 'use strict';
 
-const data =
+// @flow
+
+type DataRecord = {
+    id: number,
+    first_name: string,
+    last_name: string,
+    email: string,
+    gender: string
+}
+
+const data: Array<DataRecord>  =
 
 [{"id":1,"first_name":"Ricoriki","last_name":"Tonbye","email":"rtonbye0@dmoz.org","gender":"Male"},
 {"id":2,"first_name":"Brant","last_name":"Kiessel","email":"bkiessel1@msn.com","gender":"Male"},

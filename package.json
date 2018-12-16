@@ -5,6 +5,9 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node src/app.js",
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build",
+    "flow": "flow",
     "docker-build": "docker build . -t mauget/person-service:latest",
     "docker-push": "docker push mauget/person-service:latest",
     "docker-start": "docker run --name person-service --rm -p 3000:3000 mauget/person-service:latest",
@@ -23,6 +26,9 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "flow": "^0.2.3"
   }
 }
