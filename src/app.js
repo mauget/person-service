@@ -13,14 +13,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const personRepo = require("./personRepository");
 
-const PORT = 3000;
+const PORT: number = 3000;
 
 const app = new express();
 
 // register JSON parser middleware
 app.use(bodyParser.json());
 
-app.listen(PORT, () => {
+app.listen(PORT, (): void => {
     console.log('Person service listening');
 });
 
@@ -31,13 +31,13 @@ router.get('/',  (req, res): void  => {
 });
 
 router.get('/persons/:id', (req, res): void => {
-    const id: number = parseInt(req.params.id);
+    const id = parseInt(req.params.id);
     const result = personRepo.getById(id);
     res.send(result);
 });
 
 router.get('/persons', (req, res): void => {
-    const result: Array<PersonObj> = personRepo.getAll();
+    const result = personRepo.getAll();
     res.send(result);
 });
 

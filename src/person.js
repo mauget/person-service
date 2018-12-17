@@ -2,15 +2,6 @@
 
 // @flow
 
-
-type PersonObj = {
-    id: number,
-    firstName: string,
-    lastName: string,
-    email: string
-}
-
-
 class Person {
     id: number;
     firstName: string;

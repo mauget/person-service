@@ -2,9 +2,9 @@
   "name": "person-service",
   "version": "1.0.0",
   "description": "Simple REST service that serves a person collection",
-  "main": "src/app.js",
+  "main": "lib/app.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "npm run build && node lib/app.js",
     "build": "babel src/ -d lib/",
     "prepublish": "npm run build",
     "flow": "flow",
@@ -29,6 +29,6 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-flow": "^6.23.0",
-    "flow": "^0.2.3"
+    "flow-bin": "^0.89.0"
   }
 }
