@@ -79,5 +79,4 @@ class PersonRepository {
 
 const personRepository = new PersonRepository();
 
-// export default personRepository;
 module.exports = personRepository;
