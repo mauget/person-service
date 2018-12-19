@@ -4,7 +4,7 @@
   "description": "Simple REST service that serves a person collection",
   "main": " dist/app.js",
   "scripts": {
-    "start": "npm run build && npx cnode dist/app.js",
+    "start": "npm run build && npx node dist/app.js",
     "build": "npx babel src/ -d dist/",
     "prepublish": "npm run build",
     "flow": "npx flow",
@@ -26,9 +26,9 @@
     "express": "^4.16.4"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-flow": "^6.23.0",
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-flow": "^7.0.0",
     "flow-bin": "^0.89.0"
   }
 }
