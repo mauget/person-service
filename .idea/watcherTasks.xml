@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectTasksOptions">
-    <TaskOptions isEnabled="true">
-      <option name="arguments" value="$FilePathRelativeToProjectRoot$ --out-dir dist --source-maps --presets ../node_modules/babel-preset-flow" />
+    <TaskOptions isEnabled="false">
+      <option name="arguments" value="$FileDirRelativeToProjectRoot$/$FileNameWithoutExtension$.js --out-dir lib" />
       <option name="checkSyntaxErrors" value="true" />
       <option name="description" />
       <option name="exitCodeBehavior" value="ERROR" />
       <option name="fileExtension" value="js" />
       <option name="immediateSync" value="true" />
       <option name="name" value="Babel" />
-      <option name="output" value="dist/$FileDirRelativeToProjectRoot$/$FileNameWithoutExtension$.js:dist/$FileDirRelativeToProjectRoot$/$FileNameWithoutExtension$.js.map" />
+      <option name="output" value="lib/$FileDirRelativeToProjectRoot$/$FileNameWithoutExtension$.js" />
       <option name="outputFilters">
         <array />
       </option>

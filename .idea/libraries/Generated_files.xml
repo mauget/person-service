@@ -2,25 +2,31 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/dist/lib/app.js" />
-        <item url="file://$PROJECT_DIR$/dist/lib/data.js" />
-        <item url="file://$PROJECT_DIR$/dist/lib/person.js" />
-        <item url="file://$PROJECT_DIR$/dist/lib/personRepository.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/app.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/data.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/person.js" />
-        <item url="file://$PROJECT_DIR$/dist/src/personRepository.js" />
+        <item url="file://$PROJECT_DIR$/lib/dist/app.js" />
+        <item url="file://$PROJECT_DIR$/lib/dist/components/xxxxx.js" />
+        <item url="file://$PROJECT_DIR$/lib/dist/data.js" />
+        <item url="file://$PROJECT_DIR$/lib/dist/person.js" />
+        <item url="file://$PROJECT_DIR$/lib/dist/personRepository.js" />
+        <item url="file://$PROJECT_DIR$/lib/src/app.js" />
+        <item url="file://$PROJECT_DIR$/lib/src/components/xxxxx.js" />
+        <item url="file://$PROJECT_DIR$/lib/src/data.js" />
+        <item url="file://$PROJECT_DIR$/lib/src/person.js" />
+        <item url="file://$PROJECT_DIR$/lib/src/personRepository.js" />
+        <item url="file://$PROJECT_DIR$/lib/src/xxxxx.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/dist/lib/app.js" />
-      <root url="file://$PROJECT_DIR$/dist/lib/data.js" />
-      <root url="file://$PROJECT_DIR$/dist/lib/person.js" />
-      <root url="file://$PROJECT_DIR$/dist/lib/personRepository.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/app.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/data.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/person.js" />
-      <root url="file://$PROJECT_DIR$/dist/src/personRepository.js" />
+      <root url="file://$PROJECT_DIR$/lib/dist/app.js" />
+      <root url="file://$PROJECT_DIR$/lib/dist/components/xxxxx.js" />
+      <root url="file://$PROJECT_DIR$/lib/dist/data.js" />
+      <root url="file://$PROJECT_DIR$/lib/dist/person.js" />
+      <root url="file://$PROJECT_DIR$/lib/dist/personRepository.js" />
+      <root url="file://$PROJECT_DIR$/lib/src/app.js" />
+      <root url="file://$PROJECT_DIR$/lib/src/components/xxxxx.js" />
+      <root url="file://$PROJECT_DIR$/lib/src/data.js" />
+      <root url="file://$PROJECT_DIR$/lib/src/person.js" />
+      <root url="file://$PROJECT_DIR$/lib/src/personRepository.js" />
+      <root url="file://$PROJECT_DIR$/lib/src/xxxxx.js" />
     </CLASSES>
     <SOURCES />
   </library>
