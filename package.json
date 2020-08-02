@@ -4,7 +4,7 @@
   "description": "Simple REST service that serves a person collection",
   "main": " dist/app.js",
   "scripts": {
-    "start": "npm run build && npx node dist/app.js",
+    "start": "npm run build && npx node  $NODE_DEBUG_OPTION  dist/app.js",
     "build": "npx babel src/ -d dist/",
     "prepublish": "npm run build",
     "flow": "npx flow",

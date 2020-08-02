@@ -2,8 +2,6 @@
 
 // @flow
 
-
-
 type PersonObj = {
     id: number,
     firstName: string,
