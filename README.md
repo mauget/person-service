@@ -9,11 +9,11 @@ Run a native node.js Web server, or execute it in a Docker container.
 
 ##### Native
 
-`npm start`  (listens to port 3000)
+`npm start`  (listens to port 3004)
 
 ##### Docker
 
-`npm run docker-start` (listens to port 3000)
+`npm run docker-start` (listens to port 3004)
 
 ## API
 

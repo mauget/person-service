@@ -10,7 +10,7 @@
     "flow": "npx flow",
     "docker-build": "docker build . -t mauget/person-service:latest",
     "docker-push": "docker push mauget/person-service:latest",
-    "docker-start": "docker run --name person-service --rm -p 3000:3000 mauget/person-service:latest",
+    "docker-start": "docker run --name person-service --rm -p 3004:3004 mauget/person-service:latest",
     "docker-stop": "docker stop person-service",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

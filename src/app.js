@@ -19,7 +19,14 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const personRepo = require("./personRepository");
 
-const PORT: number = 3000;
+const PORT: number = 3004;
+const HEADERS = {
+    'Access-Control-Allow-Origin': '*'
+};
+
+function setHeaders(res, headers) {
+    Object.keys(headers).forEach(k => res.set(k, headers[k]));
+}
 
 const app = new express();
 
@@ -33,17 +40,20 @@ app.listen(PORT, ()/*: void*/ => {
 const router = app;
 
 router.get('/',  (req, res)/*: void */ => {
+    setHeaders(res, HEADERS);
     res.send('Person service listening');
 });
 
 router.get('/persons/:id', (req, res)/*: void*/ => {
     const id = parseInt(req.params.id);
     const result = personRepo.getById(id);
+    setHeaders(res, HEADERS);
     res.send(result);
 });
 
 router.get('/persons', (req, res)/*: void*/ => {
     const result = personRepo.getAll();
+    setHeaders(res, HEADERS);
     res.send(result);
 });
 
