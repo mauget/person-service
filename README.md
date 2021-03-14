@@ -33,9 +33,11 @@ The API handles a JSON rendition of a `Person` object or a collection of them.
 * `/persons/:id` - return single person keyed by integer id
 
 Get all:
+
 `curl http://localhost:3004/persons`
 
 Get person for ID 999:
+
 `curl http://localhost:3004/persons/999`
 
 
@@ -46,7 +48,8 @@ Get person for ID 999:
 Each POST assigns a generated id. The posted `Person.id` is ignored. Multiple
 POSTs of a given `Person` result in multiple new records, differing only by id.
 
-Creates new person each time it is issued:
+E.g. creates new person each time it is issued:
+
 `curl -X PUT -H "Content-Type: application/json" -d '{"id":0,"firstName":"Kayle","lastName":"Mauget","email":"ksneesbyrq@blogger.com"}'  http://localhost:3004/persons`
 
 ##### PUT
@@ -57,14 +60,16 @@ PUT is idempotent, meaning repeated PUTs persist identical states. Unlike POST, 
 `Person.id` is **not** ignored. Consider a PUT as a command to synchronize a 
 repository record to an input reccord.
 
-Update existing id 999 (adds if not existing)
+E.g. updates existing id 999 (adds if not existing)
+
 `curl -X PUT -H "Content-Type: application/json" -d '{"id":1000,"firstName":"Kayle","lastName":"Mauget","email":"ksneesbyrq@blogger.com"}'  http://localhost:3004/persons`
 
 ##### DELETE
 
 * `/persons/:id` - deletes single person keyed by integer id
 
-Remooves person for ID 3954
+Eg. remooves person for ID 3954:
+
 `curl -X DELETE http://localhost:3004/persons/3954`
 
 ## Node Middleware
