@@ -32,11 +32,11 @@ The API handles a JSON rendition of a `Person` object or a collection of them.
 * `/persons`  - retrieve all persons (unordered)
 * `/persons/:id` - return single person keyed by integer id
 
-Get all:
+E.g. fetch all:
 
 `curl http://localhost:3004/persons`
 
-Get person for ID 999:
+E.g. fetch single person for ID 999:
 
 `curl http://localhost:3004/persons/999`
 
